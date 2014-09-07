@@ -37,11 +37,15 @@ Demo Heroku app is [here](http://sandbox-012-data-tables.herokuapp.com/).
 
         rake db:migrate
 
-5. Start the web server:
+5. Create seed data:
+
+        rake db:seed
+
+6. Start the web server:
 
         rails server
 
-5. Using a browser, go to [http://localhost:3000](http://localhost:3000)
+7. Using a browser, go to [http://localhost:3000](http://localhost:3000)
 
 ## Running the test suite
 

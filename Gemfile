@@ -39,8 +39,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+gem "annotate"
 gem "bootstrap-generators"
+gem 'faker', github: 'stympy/faker'
 gem "select2-rails"
 gem "smarter_csv"
 group :development do
