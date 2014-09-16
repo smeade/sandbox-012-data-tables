@@ -4,20 +4,13 @@ An application to experiment with [DataTables](http://www.datatables.net/).
 
 Demo Heroku app is [here](http://sandbox-012-data-tables.herokuapp.com/).
 
+See the excellent Rails Cast [here](http://railscasts.com/episodes/340-datatables).
+
 ## Notes
 
-* Remember that for css/scss to be compatible with Rails' asset pipeline, [links to assets](http://guides.rubyonrails.org/asset_pipeline.html#coding-links-to-assets) must use the -url and -path helpers:
+* Use jquery-datatables-rails gem. This takes care of smoothly getting the css, js, and images into the pipeline.
 
-  * `image-url("rails.png")` becomes `url(/assets/rails.png)`
-  * `image-path("rails.png")` becomes `"/assets/rails.png"`
-
-  For example, to support DataTable's sorting arrows, place the image files in app/assets/images, and use the following scss:
-
-        table.dataTable thead .sorting { background: image-url('sort_both.png') no-repeat center right; }
-        table.dataTable thead .sorting_asc { background: image-url('sort_asc.png') no-repeat center right; }
-        table.dataTable thead .sorting_desc { background: image-url('sort_desc.png') no-repeat center right; }
-        table.dataTable thead .sorting_asc_disabled { background: image-url('sort_asc_disabled.png') no-repeat center right; }
-        table.dataTable thead .sorting_desc_disabled { background: image-url('sort_desc_disabled.png') no-repeat center right; }
+* Create a dedicated datatables/products_datatable.rb class to handle the serving of json in a datatable friendly way.
 
 * Remember that with TurboLinks, for JavaScript to load you should not use `$(document).ready`, but use:
 

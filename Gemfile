@@ -42,6 +42,8 @@ gem 'spring',        group: :development
 gem "annotate"
 gem "bootstrap-generators"
 gem 'faker', github: 'stympy/faker'
+gem 'jquery-datatables-rails', '~> 2.2.1'
+gem 'kaminari'
 gem "select2-rails"
 gem "smarter_csv"
 group :development do
