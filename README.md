@@ -4,11 +4,11 @@ An application to experiment with [DataTables](http://www.datatables.net/).
 
 Demo Heroku app is [here](http://sandbox-012-data-tables.herokuapp.com/).
 
-See the excellent Rails Cast [here](http://railscasts.com/episodes/340-datatables).
+See the excellent RailsCast [here](http://railscasts.com/episodes/340-datatables).
 
 ## Notes
 
-* Use jquery-datatables-rails gem. This takes care of smoothly getting the css, js, and images into the pipeline.
+* Use [jquery-datatables-rails](https://github.com/rweng/jquery-datatables-rails) gem. This takes care of smoothly getting the css, js, and images into the pipeline.
 
 * Create a dedicated datatables/products_datatable.rb class to handle the serving of json in a datatable friendly way.
 
